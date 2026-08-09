@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dashboard Nobody Opens — Jamal Shah</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23090E1A%22/><rect x=%2222%22 y=%2255%22 width=%2212%22 height=%2223%22 fill=%22%23F5A623%22/><rect x=%2244%22 y=%2238%22 width=%2212%22 height=%2240%22 fill=%22%2334D9C4%22/><rect x=%2266%22 y=%2222%22 width=%2212%22 height=%2256%22 fill=%22%23F5A623%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="mark">JS</span> Jamal Shah</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../experience.html">Experience</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../skills.html">Skills</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../cv.html">CV</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="../contact.html">Let's talk →</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section class="section" style="padding-top:64px;">
+  <div class="container">
+    <div class="post-body">
+      <a href="../blog.html" class="small-note" style="color:var(--teal)">← Back to blog</a>
+      <h1 style="margin-top:18px;">The Dashboard Nobody Opens: Why Adoption Beats Accuracy</h1>
+      <div class="post-meta-top">
+        <span>05 Jul 2026</span><span>·</span><span>Power BI, Stakeholders</span>
+      </div>
+
+      <p>Every BI team has one: the dashboard that took three weeks to build, passed every QA check, and has a single-digit open rate. It's usually not a data problem. It's a trust and habit problem, and it's fixable — but not with more charts.</p>
+
+      <h2>Three reasons dashboards die quietly</h2>
+      <p>First, nobody was in the room when the requirements were set — so the metrics on screen answer a question no one is currently asking. Second, the numbers don't match what a stakeholder half-remembers from a meeting last week, so they stop trusting it before they've read past the header. Third, it takes more clicks to find the one number someone needs than to just message the analyst directly.</p>
+
+      <h2>What changed my build process</h2>
+      <p>I now open every dashboard build with a five-minute conversation: "What decision are you trying to make, and what number would change your mind?" That single question usually cuts the planned metric count by half and reorders the layout entirely — the answer goes top-left, above the fold, every time.</p>
+
+      <p>I also stopped treating "ship" as the finish line. A short Loom-style walkthrough or a one-paragraph AI-generated summary attached to the weekly refresh does more for adoption than another slicer ever will — it meets people where they already are, in their inbox or Slack, instead of asking them to remember a URL.</p>
+
+      <h2>The metric that actually matters</h2>
+      <p>Precision and recall are necessary. They are not sufficient. The metric I track privately now is: how many decisions changed because of this dashboard in its first month? If the answer is zero, the accuracy score is a vanity number.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-note">© <span id="year"></span> Jamal Shah. Built with intent, not a template.</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jamal-shah24/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/jamesk222" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:jamalshah199110@gmail.com">Email</a>
+      <a href="../cv.html">CV</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>

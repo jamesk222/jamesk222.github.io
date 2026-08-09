@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Why I Stopped Calling Myself "Just a Data Analyst" — Jamal Shah</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%23090E1A%22/><rect x=%2222%22 y=%2255%22 width=%2212%22 height=%2223%22 fill=%22%23F5A623%22/><rect x=%2244%22 y=%2238%22 width=%2212%22 height=%2240%22 fill=%22%2334D9C4%22/><rect x=%2266%22 y=%2222%22 width=%2212%22 height=%2256%22 fill=%22%23F5A623%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="mark">JS</span> Jamal Shah</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../experience.html">Experience</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../skills.html">Skills</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../cv.html">CV</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="../contact.html">Let's talk →</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section class="section" style="padding-top:64px;">
+  <div class="container">
+    <div class="post-body">
+      <a href="../blog.html" class="small-note" style="color:var(--teal)">← Back to blog</a>
+      <h1 style="margin-top:18px;">Why I Stopped Calling Myself "Just a Data Analyst"</h1>
+      <div class="post-meta-top">
+        <span>20 Jul 2026</span><span>·</span><span>Career, BI</span>
+      </div>
+
+      <p>For most of the last decade, if you'd asked me what I do, I'd have said "data analyst" and left it there. Technically true. Also the least interesting way to describe the actual work.</p>
+
+      <p>A title like that tells a hiring manager what tools you touch. It says nothing about what changes because you touched them. And in BI specifically, that gap is the whole game — I've built dashboards that were technically flawless and completely ignored, and I've built rougher ones that reshaped a planning meeting in fifteen minutes. The difference was never the SQL.</p>
+
+      <h2>What actually moved the needle</h2>
+      <p>Looking back across fraud/churn models, forecasting pipelines and reporting automation work, the projects that mattered shared one trait: I started from the decision someone needed to make, not the dataset sitting in front of me. A 92%-precision churn model is a number. "We can now flag the 18% of at-risk accounts we were missing before renewal calls" is a decision.</p>
+
+      <blockquote>The job was never "produce a dashboard." It was "change what happens on Monday morning."</blockquote>
+
+      <h2>Reframing the title</h2>
+      <p>These days I describe the work as BI and marketing analytics with an AI-automation layer on top — because that's a more honest map of where the value actually sits: clean pipelines feeding trustworthy dashboards, narrated by AI-assisted reporting so non-technical stakeholders don't have to read forty charts to find the one number that matters.</p>
+
+      <p>It's a small wording change. But it's forced me to justify every project by its business outcome first, and its methodology second — which, unsurprisingly, is also what gets projects funded.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-note">© <span id="year"></span> Jamal Shah. Built with intent, not a template.</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jamal-shah24/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/jamesk222" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:jamalshah199110@gmail.com">Email</a>
+      <a href="../cv.html">CV</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
