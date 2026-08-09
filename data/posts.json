@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Why I Stopped Calling Myself 'Just a Data Analyst'",
+    "date": "2026-07-20",
+    "url": "blog/why-i-stopped-calling-myself-just-a-data-analyst.html",
+    "excerpt": "Titles chase headcount, not impact. Here's how I started framing my BI work around the decisions it changed instead of the tools it used.",
+    "tags": ["Career", "BI"]
+  },
+  {
+    "title": "The Dashboard Nobody Opens: Why Adoption Beats Accuracy",
+    "date": "2026-07-05",
+    "url": "blog/the-dashboard-nobody-opens.html",
+    "excerpt": "A 99%-accurate model that nobody trusts is worth less than an 85%-accurate one leadership actually acts on. Notes on building for adoption.",
+    "tags": ["Power BI", "Stakeholders"]
+  },
+  {
+    "title": "Using GenAI as a Reporting Layer, Not a Crutch",
+    "date": "2026-06-18",
+    "url": "blog/genai-as-a-reporting-layer.html",
+    "excerpt": "How I integrate ChatGPT and Gemini into recurring reporting workflows to cut manual effort in half, without letting the model make the call.",
+    "tags": ["AI Automation", "Reporting"]
+  }
+]
