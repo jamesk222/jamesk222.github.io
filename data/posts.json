@@ -1,4 +1,12 @@
 [
+   {
+    "title": "SQL Fundamentals",
+    "date": "2026-08-12",
+    "url": "blog/sql-fundamentals.html",
+    "excerpt": "Starting detail oriented  write up about not only SQL queries but production level for BI Analyst.",
+    "tags": ["Career", "BI"]
+  },
+  
   {
     "title": "Why I Stopped Calling Myself 'Just a Data Analyst'",
     "date": "2026-07-20",
