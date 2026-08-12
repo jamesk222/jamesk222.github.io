@@ -36,17 +36,34 @@
       <div class="post-meta-top">
         <span>[e.g. 12 Aug 2026]</span><span>·</span><span>[Tag One, Tag Two]</span>
       </div>
- <p>[The first stage of learning SQL is often underestimated.People usually start by memorising SELECT, WHERE, ORDER BY and GROUP BY, then assume they are learning SQL. But knowing the syntax is not the same as understanding what the data is telling you.
+ <p>The first stage of learning SQL is often underestimated. People usually start by memorising SELECT, WHERE, ORDER BY and GROUP BY, then assume they're learning SQL. But knowing the syntax is not the same as understanding what the data is telling you.
 
-The real foundation is learning how a database thinks.Before querying anything, you need to understand tables, rows, columns, primary keys, data types and relationships. A column may look like a simple field, but its meaning depends on the business context and the level of detail stored in the table.
+Learning How a Database Thinks
+The real foundation is learning how a database thinks — not how to write a query. Before querying anything, you need to understand tables, rows, columns, primary keys, data types and relationships.
 
-Even a basic filter can produce a misleading answer if you don’t understand NULL values, duplicate records or how dates are stored.
+A column may look like a simple field, but its meaning depends on the business context and the level of detail stored in the table. The same column name can mean two different things in two different tables, and no amount of syntax knowledge will warn you about that.
 
-SELECT * may be convenient while learning, but developing the habit of selecting only what you need is far more useful in professional work.
+The Quiet Ways a Query Can Mislead You
+Even a basic filter can produce a misleading answer if you don't understand a few things first:
 
-The same applies to WHERE and ORDER BY. They aren’t just commands to memorise. They are tools for controlling what data you are actually analysing.
+How NULL values behave in comparisons and aggregations
+Whether the table contains duplicate records that will silently inflate a count or sum
+How dates are stored — as text, as timestamps, in what timezone
+None of these show up as an error. The query runs, returns a number, and the number looks plausible. That's what makes them dangerous.
 
-GROUP BY is where the thinking becomes more important. When you aggregate sales, customers or transactions, you are changing the level of detail. If you don’t understand that change, it’s easy to produce numbers that look correct but answer the wrong question.]</p>
+A query that runs without errors is not the same as a query that answers the right question.
+SELECT, WHERE and ORDER BY Are Tools, Not Just Commands
+SELECT * may be convenient while learning, but developing the habit of selecting only what you need is far more useful in professional work — it forces you to know exactly what you're relying on, and it keeps queries readable for the next person who opens them.
+
+The same applies to WHERE and ORDER BY. They aren't just commands to memorise. They're tools for controlling what data you're actually analysing — every filter you add is a decision about what gets included in the story you're about to tell.
+
+GROUP BY Is Where the Thinking Gets Real
+GROUP BY is where understanding starts to matter more than syntax. When you aggregate sales, customers or transactions, you are changing the level of detail — collapsing many rows into one, and choosing what gets averaged, summed or lost in the process.
+
+If you don't understand that change, it's easy to produce numbers that look correct but answer the wrong question. A "total sales by region" query and a "total sales by region, per month" query can both run cleanly and both be wrong for what the business actually needed to know.
+
+The Takeaway
+Syntax gets you a working query. Understanding gets you a trustworthy one. The gap between the two is exactly where most early-career analyst mistakes live — and closing it is less about learning more commands, and more about slowing down to ask what each row in the table actually represents before you touch it.</p>
 
 <p>That’s why Stage 1 isn’t really about learning a list of SQL commands.It’s about developing the discipline to ask:
 
