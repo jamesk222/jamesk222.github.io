@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL Fundamentals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="../index.html" class="brand"><span class="mark">JS</span> Jamal Shah</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../experience.html">Experience</a></li>
+      <li><a href="../projects.html">Projects</a></li>
+      <li><a href="../skills.html">Skills</a></li>
+      <li><a href="../blog.html" class="active">Blog</a></li>
+      <li><a href="../cv.html">CV</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <a class="nav-cta" href="../contact.html">Let's talk →</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  </nav>
+</header>
+
+<section class="section" style="padding-top:64px;">
+  <div class="container">
+    <div class="post-body">
+      <a href="../blog.html" class="small-note" style="color:var(--teal)">← Back to blog</a>
+      <h1 style="margin-top:18px;">[SQL Fundamentals]</h1>
+      <div class="post-meta-top">
+        <span>[e.g. 12 Aug 2026]</span><span>·</span><span>[Tag One, Tag Two]</span>
+      </div>
+ <p>[The first stage of learning SQL is often underestimated.People usually start by memorising SELECT, WHERE, ORDER BY and GROUP BY, then assume they are learning SQL. But knowing the syntax is not the same as understanding what the data is telling you.
+
+The real foundation is learning how a database thinks.Before querying anything, you need to understand tables, rows, columns, primary keys, data types and relationships. A column may look like a simple field, but its meaning depends on the business context and the level of detail stored in the table.
+
+Even a basic filter can produce a misleading answer if you don’t understand NULL values, duplicate records or how dates are stored.
+
+SELECT * may be convenient while learning, but developing the habit of selecting only what you need is far more useful in professional work.
+
+The same applies to WHERE and ORDER BY. They aren’t just commands to memorise. They are tools for controlling what data you are actually analysing.
+
+GROUP BY is where the thinking becomes more important. When you aggregate sales, customers or transactions, you are changing the level of detail. If you don’t understand that change, it’s easy to produce numbers that look correct but answer the wrong question.]</p>
+
+<p>That’s why Stage 1 isn’t really about learning a list of SQL commands.It’s about developing the discipline to ask:
+
+What does this table represent?
+
+What does one row mean?
+
+What exactly am I trying to measure?
+
+Can I trust the result?
+
+Those questions become more important as your SQL gets more advanced.
+
+Key takeaway: Build a strong understanding of data before worrying about writing complicated SQL. Advanced techniques are only useful when the fundamentals are correct.</p>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-note">© <span id="year"></span> Jamal Shah. Built with intent, not a template.</div>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/jamal-shah24/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/jamesk222" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:jamalshah199110@gmail.com">Email</a>
+      <a href="../cv.html">CV</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="../js/main.js"></script>
+</body>
+</html>
